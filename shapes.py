@@ -269,4 +269,4 @@ class Pyramid(Square):
         Calculates Pyramid area using formula: 2 * a * sqrt(side ** 2 - a ** 2 / 4)
         return: float -> area of the Pyramid
         """
-        return 2 * self.a * sqrt((self.side ** 2) - (self.a ** 2 / 4))
+        return self.a ** 2 + 2 * self.a * sqrt((self.side ** 2) - (self.a ** 2 / 4))
