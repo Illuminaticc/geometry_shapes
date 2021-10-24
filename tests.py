@@ -143,7 +143,7 @@ class PyramidTester(unittest.TestCase):
         a = 3
         s = 4
         p = Pyramid(a, s)
-        area = 2 * a * sqrt((s ** 2) - (a ** 2 / 4))
+        area = a ** 2 + 2 * a * sqrt((s ** 2) - (a ** 2 / 4))
         self.assertEqual(p.area(), area)
 
 
