@@ -18,7 +18,7 @@ class Shape:
 class Square(Shape):
     title = 'Квадрат'
 
-    def __init__(self, a: int):
+    def __init__(self, a: float):
         """
         Constructs a Square object
         param a: int -> side of a Square
@@ -55,7 +55,7 @@ class Cube(Square):
 class Rectangle(Square):
     title = 'Прямоугольник'
 
-    def __init__(self, a, b: int):
+    def __init__(self, a, b: float):
         """
         Constructs a Rectangle object
         param a: int -> first side of a Rectangle
@@ -82,7 +82,7 @@ class Rectangle(Square):
 class Parallelepiped(Rectangle):
     title = 'Параллелепипед'
     
-    def __init__(self, a, b, c: int):
+    def __init__(self, a, b, c: float):
         """
         Constructs a Parallelepiped object
         param a: int -> first side of a Parallelepiped
@@ -110,7 +110,7 @@ class Parallelepiped(Rectangle):
 class Trapezoid(Rectangle):
     title = 'Трапеция'
     
-    def __init__(self, a, b, h: int):
+    def __init__(self, a, b, h: float):
         """
         Constructs a Trapezoid object
         param a: int -> first side of a Trapezoid
@@ -131,7 +131,7 @@ class Trapezoid(Rectangle):
 class Rhombus(Square):
     title = 'Ромб'
     
-    def __init__(self, a, h: int):
+    def __init__(self, a, h: float):
         """
         Constructs a Rhombus object
         param a: int -> first side of a Rhombus
@@ -159,7 +159,7 @@ class Rhombus(Square):
 class Circle(Shape):
     title = 'Круг'
 
-    def __init__(self, r: int):
+    def __init__(self, r: float):
         """
         Constructs a Circle object
         param r: int -> radius of a Circle
@@ -189,7 +189,7 @@ class Sphere(Circle):
 class Cylinder(Circle):
     title = 'Цилиндр'
 
-    def __init__(self, r, h: int):
+    def __init__(self, r, h: float):
         """
         Constructs a Cylinder object
         param r: int -> radius of a Cylinder
@@ -209,7 +209,7 @@ class Cylinder(Circle):
 class Triangle(Shape):
     title = 'Треугольник'
 
-    def __init__(self, a: int, b: int, c: int):
+    def __init__(self, a: float, b: float, c: float):
         """
         Constructs a Triangle object
         param a: int -> first side of a Triangle
@@ -235,7 +235,7 @@ class Triangle(Shape):
 class Cone(Circle):
     title = 'Конус'
 
-    def __init__(self, r, g: int):
+    def __init__(self, r, g: float):
         """
         Constructs a Cone object
         param r: int -> radius of a Cone
@@ -255,7 +255,7 @@ class Cone(Circle):
 class Pyramid(Square):
     title = 'Пирамида'
 
-    def __init__(self, a, side: int):
+    def __init__(self, a, side: float):
         """
         Constructs a Pyramid object
         param a: int -> side of a Pyramid
